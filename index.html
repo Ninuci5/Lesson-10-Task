@@ -6,8 +6,14 @@
     <title>Lesson-10-Task</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <meta name="description" content="Forms and tags.">
-    <meta name="author" content="John Doe"> 
+    <meta name="description" content="Forms and tags."
+    <meta name="author" content="John Doe">
+    
+    <meta property="og:url"                content="https://ninuci5.github.io/Lesson-10-Task/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="forms and tags" />
+    <meta property="og:description"        content="How  to use forms and tags" />
+    <meta property="og:image"              content="https://github.com/Ninuci5/Lesson-10-Task/blob/main/assets/img/1.jpg" />
 
 </head>
 <body>
@@ -15,7 +21,46 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
      </p>
-     <img src="assets/img/1.jpg" alt="">
+     <form action="#">
+        <div class="container">
+            <label for="username">Username:</label>
+            <input type="text" 
+            name="username" 
+            placeholder="Enter your username"
+            id="username" 
+            maxlength="5"
+            minlenghth="1"
+            required
+            />
+     </div>
+
+     <div class="form-field">
+        <label for="email">Email:</label>
+        <input 
+        type="email"
+        name=" user email"
+        placeholder="Example@example.com"
+        id="email"
+        required />
+    </div>
+
+    <div class="form-field">
+        <label for="age">Age:</label>
+        <input
+            type="number"
+            name="user age"
+            placeholder="Enter your age"
+            id="age"
+            min="10"
+            max="20"
+            required />
+    </div>
+
+        <button type="submit">Submit</button>   
+
+      
+        
+     </form>
 
 </body>
 </html>
